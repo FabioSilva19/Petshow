@@ -1,0 +1,224 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	font-family: Arial;
+	display: flex;
+	max-width: 100vw;
+	flex-wrap: wrap;
+}
+
+a{
+	display: inline-block;
+	text-decoration: none;
+}
+
+
+#header-1{
+	background: #F2BE22;
+	height: 100px;
+	width: 100vw;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-sizing: border-box;
+	position: fixed;
+	z-index: 100;
+}
+
+header h1{
+	margin-left: 20px;
+}
+
+header input[type="text"]{
+	background-color: #fff;
+	color: white;
+	position: relative;
+	width: 600px;
+	height: 30px;
+	border: none;
+	justify-content: center;
+	outline: none;
+	margin: 10px;
+		box-sizing: border-box;
+}
+
+header form{
+	background-color: #fff;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	box-sizing: border-box;
+}
+
+header form img{
+	margin-left: 10px;
+}
+
+input[type="submit"]{
+	background-color: #F20505;
+	display: flex;
+	width: 100px;
+	height: 50px;
+	align-items: center;
+	justify-content: space-around;
+	cursor: pointer;
+	border: none;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+	background-image: url(../img/procurar.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-position: 5px;
+}
+
+div#interacao{
+	display: flex;
+	width: 50px;
+	justify-content: space-between;
+	margin-right: 20px;
+}
+
+
+nav{
+	display: flex;
+	width: 100vw;
+
+}
+
+nav ul#menu{
+	background-color: #F20505;
+	margin: 0;
+	padding: 0;
+	list-style: none;	
+	display: flex;
+	width: 100vw;
+	justify-content: space-around;
+	align-items: center;
+	height: 40px;
+	font-weight: bold;
+	position: relative;
+	top: 100px;
+}
+
+nav ul#menu li{
+	display: flex;
+	align-items: center;
+	height: 40px;
+	flex-wrap: wrap;
+	width: min-content;
+}
+
+nav ul#menu li a{
+	display: flex;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+	padding: 0 15px;
+	color: white;
+
+}
+
+nav ul#menu li ul{
+	padding: 0;
+	margin: 0;
+	height: 200px;
+	text-align: left;
+	opacity: 0;
+	transition-duration: 0.3s;
+	pointer-events: none;
+	
+}
+
+nav ul#menu li.cachorros:hover ul{
+	opacity: 1;
+	transition-duration: 0.3s;
+	z-index: 10;
+	background: #fff;
+	pointer-events: auto;
+}
+
+nav ul#menu li:hover{
+	background: #fff;
+	transition-duration: 0.3s;
+}
+
+nav ul#menu li:hover a{
+	color: #F2BE22;
+	transition-duration: 0.3s;
+}
+
+nav ul#menu li ul li{
+	padding: 10px;
+
+}
+
+/** Fim do topo **/
+
+div#banner-principal img{
+	width: 100vw;
+	position: relative;
+	top: 100px;
+}
+
+div#mais-populares,
+div#mais-vendidos{
+	height: 300px;
+	display: flex;
+	justify-content: center;
+	width: 100vw;
+	text-transform: uppercase;
+	flex-wrap: wrap;
+}
+
+div#mais-populares h1,
+div#mais-vendidos h1{
+	margin: 0 auto;
+	height: 40px;
+	font-size: 30px;
+	background-image: url(../img/crown.png);
+	background-repeat: no-repeat;
+	width: 30vw;
+	text-align: center;
+	border-bottom: 1px solid #dcdcdc;
+	background-position: 500px 5px;
+}
+
+div#mais-populares img,
+div#mais-vendidos img{
+	width: 150px;
+}
+
+article#carrosel{
+	display: flex;
+	width: 90vw;
+	height: 180px;
+	justify-content: space-around;
+}
+
+article#carrosel a{
+	text-align: center;
+	color: #4A44F2;
+	font-size: 12px;
+	line-height: 16px;
+}
+
+footer{
+	display: flex;
+	width: 100vw;
+	justify-content: space-between;
+	background: #4A44F2;
+}
+
+footer h1{
+	padding-left: 20px;
+}
+
+div#redes-sociais{
+	width: 100px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
